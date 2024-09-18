@@ -32,7 +32,7 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-normal border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
           <li>
-            <a href="#" class="block py-2 px-3 text-primary bg-primary rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+            <a href="#" class="block py-2 px-3 text-primary bg-primary rounded md:bg-transparent md:p-0" aria-current="page">Home1</a>
           </li>
           <li>
             <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0">About</a>
@@ -55,18 +55,13 @@
               <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Hackprix! See what's new</span> 
               <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
           </a>
-          <h1 class="mb-1 text-4xl font-poppins font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-9xl dark:text-white">CodeWave Hub</h1>
-          <p class="mb-8 text-lg font-poppins font-normal text-gray-500 lg:text-5xl sm:px-16 xl:px-48 dark:text-gray-400">Student open-source community</p>
+          <h1 class="mb-1 text-4xl font-poppins font-extrabold tracking-tight leading-none md:text-5xl lg:text-9xl text-white">CodeWave Hub</h1>
+          <p class="mb-8 text-lg font-poppins font-normal text-gray-400 lg:text-5xl sm:px-16 xl:px-48">Student open-source community</p>
       </div>
     </section>
 
-    <section>
-      <div x-data="{}"
-      x-init="$nextTick(() => {
-          let ul = $refs.logos;
-          ul.insertAdjacentHTML('afterend', ul.outerHTML);
-          ul.nextSibling.setAttribute('aria-hidden', 'true');
-      })" class="w-full inline-flex flex-nowrap justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+    <section class="py-4 bg-gradient-to-b from-primary-dark to-45%">
+      <div class="w-full inline-flex flex-nowrap justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll">
           <li>
             <img src="assets/logos/gh.png" alt="Github">
@@ -77,8 +72,23 @@
           <li>
             <img src="assets/logos/appwrite.png" alt="Appwrite">
           </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
         </ul>
-        <!-- <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll" aria-hidden="true">
+        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll" aria-hidden="true">
           <li>
             <img src="assets/logos/gh.png" alt="Github">
           </li>
@@ -88,8 +98,35 @@
           <li>
             <img src="assets/logos/appwrite.png" alt="Appwrite">
           </li>
-        </ul> -->
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+          <li>
+            <img src="assets/logos/appwrite.png" alt="Appwrite">
+          </li>
+        </ul>
       </div>
+      <div>
+        <div>
+          <h3>What is CodeWave Hub?</h3>
+          <p>CodeWave Hub is an open-source community for students. It was founded by Afnan Abdul Vasay with the vision to nurture student's interest in technology. It operates as a hobby and interest club, a platform where students can participate and contribute according to their passion.
+            This collaborative community brings together students who share similar technological interests, allowing them to work collectively on projects. Moreover, the community facilitates mentorship from experienced professionals, providing valuable guidance and insight.
+            </p>
+        </div>
+        <div>
+          <img src="assets/3d-portrait-people-removebg-preview.png" alt="">
+        </div>
+      </div>
+
     </section>
   </main>
   
