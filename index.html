@@ -1,164 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="output.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/heroicons@2.0.10/dist/heroicons.min.js"></script>
-</head>
-<body class="bg-bg text-center mx-auto">
-    
+  </head>
+  <body class="bg-bg text-center mx-auto">
+    <nav class="bg-bg fixed w-full z-20 top-0 start-0">
+      <div
+        class="container max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-5 pt-6 align-middle"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="assets/logos/CWH_blue.png"
+            class="h-10"
+            alt="Codewave Hub"
+          />
+        </a>
 
-  <nav class="bg-bg fixed w-full z-20 top-0 start-0">
-    <div class="container max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-5 pt-6 align-middle">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="assets/logos/CWH_blue.png" class="h-10" alt="Codewave Hub">
-      </a>
-      
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-transparent border border-primary rounded-full hover:bg-primary-dark font-medium text-sm px-4 py-2 text-center">Join Us</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      </div> 
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-transparent border border-primary rounded-full hover:bg-primary-dark font-medium text-sm px-4 py-2 text-center"
+          >
+            Join Us
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
 
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-normal border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
-          <li>
-            <a href="#" class="block py-2 px-3 text-primary bg-primary rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0">About</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 ">Services</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 ">Contact</a>
-          </li>
-        </ul>
-      </div>      
-    </div>
-  </nav>
-  
-  <main>
-    <section class="hero h-screen bg-gradient-to-t  from-primary-dark to-45%">
-      <div class="py-48 mx-auto flex flex-col justify-center items-center text-center align-middle h-screen">
-          <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-              <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Hackprix! See what's new</span> 
-              <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-normal border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-primary bg-primary rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero h-screen bg-gradient-to-t from-primary-dark to-45%">
+        <div
+          class="py-48 mx-auto flex flex-col justify-center items-center text-center align-middle h-screen"
+        >
+          <a
+            href="#"
+            class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+            role="alert"
+          >
+            <span
+              class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3"
+              >New</span
+            >
+            <span class="text-sm font-medium">Hackprix! See what's new</span>
+            <svg
+              class="ml-2 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
           </a>
-          <h1 class="mb-1 text-4xl font-poppins font-extrabold tracking-tight leading-none md:text-5xl lg:text-9xl text-white">CodeWave Hub</h1>
-          <p class="mb-8 text-lg font-poppins font-normal text-gray-400 lg:text-5xl sm:px-16 xl:px-48">Student open-source community</p>
-      </div>
-    </section>
+          <h1
+            class="mb-1 text-4xl font-poppins font-extrabold tracking-tight leading-none md:text-5xl lg:text-9xl text-white"
+          >
+            CodeWave Hub
+          </h1>
+          <p
+            class="mb-8 text-lg font-poppins font-normal text-gray-400 lg:text-5xl sm:px-16 xl:px-48"
+          >
+            Student open-source community
+          </p>
+        </div>
+      </section>
 
-    <section class="py-4 bg-gradient-to-b from-primary-dark to-35%">
-      <div class=" inline-flex flex-nowrap justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll">
-          <li>
-            <img src="assets/logos/gh.png" alt="Github">
-          </li>
-          <li>
-            <img src="assets/logos/image (1).png" alt="Interledger">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/tezos.png" alt="tezos">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-        </ul>
-        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll" aria-hidden="true">
-          <li>
-            <img src="assets/logos/gh.png" alt="Github">
-          </li>
-          <li>
-            <img src="assets/logos/image (1).png" alt="Interledger">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-          <li>
-            <img src="assets/logos/appwrite.png" alt="Appwrite">
-          </li>
-        </ul>
-      </div>
-      <div class="container mx-auto max-w-screen-lg lg:grid grid-cols-2 gap-20 text-white mt-64 text-left">
-        <div>
-          <h2 class="text-3xl font-semibold leading-relaxed font-poppins">What is CodeWave Hub?</h2>
-          <p class="leading-normal font-light font-poppins text-justify">CodeWave Hub is an open-source community for students. It was founded by Afnan Abdul Vasay with the vision to nurture student's interest in technology. It operates as a hobby and interest club, a platform where students can participate and contribute according to their passion.
-            This collaborative community brings together students who share similar technological interests, allowing them to work collectively on projects. Moreover, the community facilitates mentorship from experienced professionals, providing valuable guidance and insight.
+      <section
+        class="py-4 bg-gradient-to-b from-primary-dark to-40% overflow-hidden"
+      >
+        <div
+          class="inline-flex flex-nowrap justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
+        >
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll"
+          >
+            <li>
+              <img src="assets/logos/gh.png" alt="Github" />
+            </li>
+            <li>
+              <img src="assets/logos/image (1).png" alt="Interledger" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/tezos.png" alt="tezos" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+          </ul>
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none [&_img]:w-32 animate-infinite-scroll"
+            aria-hidden="true"
+          >
+            <li>
+              <img src="assets/logos/gh.png" alt="Github" />
+            </li>
+            <li>
+              <img src="assets/logos/image (1).png" alt="Interledger" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+            <li>
+              <img src="assets/logos/appwrite.png" alt="Appwrite" />
+            </li>
+          </ul>
+        </div>
+        <div
+          class="container mx-auto max-w-screen-lg lg:grid grid-cols-2 gap-20 text-white mt-64 text-left"
+        >
+          <div>
+            <h2 class="text-3xl font-semibold leading-relaxed font-poppins">
+              What is CodeWave Hub?
+            </h2>
+            <p class="leading-normal font-normal font-poppins text-justify">
+              CodeWave Hub is an open-source community for students. It was
+              founded by Afnan Abdul Vasay with the vision to nurture student's
+              interest in technology. It operates as a hobby and interest club,
+              a platform where students can participate and contribute according
+              to their passion. This collaborative community brings together
+              students who share similar technological interests, allowing them
+              to work collectively on projects. Moreover, the community
+              facilitates mentorship from experienced professionals, providing
+              valuable guidance and insight.
             </p>
+          </div>
+          <div>
+            <img src="assets/3d-portrait-people-removebg-preview.png" alt="" />
+          </div>
         </div>
-        <div>
-          <img src="assets/3d-portrait-people-removebg-preview.png" alt="">
+      </section>
+      <section>
+        <div
+          class="max-w-screen-lg mx-auto md:grid grid-cols-3 text-white gap-20 [&_div]:bg-primary-card [&_div]:rounded-2xl [&_div]:p-3 mt-36 text-left"
+        >
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Collaborative<br />
+                Environment
+              </h1>
+              <h2 class="font-light mt-1">
+                A space where community members can work on real-world projects
+                together, contributing their skills in coding, design, or
+                project management.
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Mentorship<br />
+                Program
+              </h1>
+              <p class="font-light mt-1">
+                Connect newcomers with experienced tech professionals for
+                guidance and skill development.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Hackathons &<br />
+                Competitions
+              </h1>
+              <h2 class="font-light mt-1">
+                Regular events where members can compete, innovate, and showcase
+                their skills.
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Networking<br />
+                Opportunities
+              </h1>
+              <h2 class="font-light mt-1">
+                A platform for connecting with like-minded innovators, potential
+                co-founders, or collaborators.
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Tech Skill<br />
+                Workshops
+              </h1>
+              <h2 class="font-light mt-1">
+                Regular virtual or in-person workshops focusing on the latest
+                tools and technologies in the industry.
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 bg-primary p-2 rounded-2xl"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-lg font-extrabold">
+                Knowledge<br />
+                Sharing
+              </h1>
+              <h2 class="font-light mt-1">
+                A platform for articles, tutorials, and resources shared by
+                community members.
+              </h2>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="bg-gray-400 pt-28 min-h-screen mt-32">
+        <div
+          class="mx-auto max-w-screen-lg flex flex-col justify-center items-center"
+        >
+          <div>
+            <h1 class="text-black font-semibold text-5xl mb-16 uppercase">
+              Events <span class="text-yellow-300 text-8xl">'''</span>
+            </h1>
+          </div>
 
-      <div class="max-w-screen-lg mx-auto md:grid grid-cols-3 text-white gap-40 [&_div]:bg-primary-card [&_div]:rounded-2xl [&_div]:p-3 mt-36 text-left">
-        <div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 bg-primary p-2 rounded-2xl">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-            </svg>           
+          <div
+            class="px-10 py-11 bg-gradient-to-br from-violet-500 to-green-400 rounded-3xl"
+          >
+            <img
+              src="assets/Screenshot_11-10-2024_195430_www.instagram.com.jpeg"
+              alt=""
+            />
           </div>
-          <div>
-            <h1 class="h1">Reason 2</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque magnam perferendis fugit commodi quibusdam quaerat.</h2>
-          </div>
+          <button
+            type="button"
+            class="text-white bg-transparent border border-primary rounded-full hover:bg-primary-dark font-medium text-sm px-4 py-2 text-center"
+          >
+            View All Events
+          </button>
         </div>
-        <div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 bg-primary p-2 rounded-2xl">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-            </svg>           
-          </div>
-          <div>
-            <h1 class="h1">Reason 1</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque magnam perferendis fugit commodi quibusdam quaerat.</h2>
-          </div>
-        </div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-      </div>
-
-    </section>
-  </main>
-  
-</body>
+      </section>
+    </main>
+  </body>
 </html>
