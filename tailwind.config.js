@@ -12,7 +12,8 @@ module.exports = {
 
       },
       fontFamily: {
-        'poppins': ['Poppins','sans-serif']
+        'poppins': ['Poppins','sans-serif'],
+        'caveat': ['Caveat','SFMono-Regular']
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
